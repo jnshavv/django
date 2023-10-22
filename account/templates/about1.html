@@ -1,0 +1,32 @@
+{%extends 'base1.html'%}
+{%block 'body'%}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="title">
+                <h1 style="text-align: center; padding-top: 20px;">About Us</h1>
+
+            </div>
+            <div class="content" style="line-height:s30px;">
+                <p class="text-left">Agoda is an online travel platform that brings high-value and rewarding travel experiences to people all over the world through the Agoda app and Agoda website. Our mission is to empower everyone to be a traveler by offering affordable deals on hotels, flights, activities, and more, with an Agoda booking experience that is hassle-free from start to finish.
+                Since the Agoda company was founded in 2005, we’ve made searching and booking travel as easy and stress-free as it should be. Agoda is now considered one of Asia’s leading travel-tech companies with millions of registered customers supported by a truly diverse team of more than 5,000 people in 25 markets and Agoda customer service available 24/7. 
+                </p>
+
+            </div>
+            <div class="social" style="align-items: center; padding-left:200px;">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+
+
+            </div>
+
+        </div>
+        <div class="col py-5"  >
+            {%load static%}
+            <img src="{%static 'images/about3.webp'%}" alt="" height="260px ">
+
+        </div>
+    </div>
+</div>
+{%endblock%}

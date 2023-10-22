@@ -1,0 +1,40 @@
+{%extends 'base1.html'%}
+{%block 'body'%}
+<div class="container py-5">
+    <table class="table table-success table-striped py-3">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>No of Persons</th>
+            <th>Date</th>
+            <th>TotalAmount</th>
+            
+            <th colspan="2">Status</th>
+        </tr>
+        {%for i in da%}
+        <tr>
+            <td>{{i.Firstname}}</td>
+            <td>{{i.Lastname}}</td>
+            <td>{{i.Age}}</td>
+            <td>{{i.No_of_Persons}}</td>
+
+            <td>{{i.date}}</td>
+            <td>{{i.total}}</td>
+
+            
+            <td><a  href="{%url 'account:edit' i.id%}" style="color:green;">Edit</a></td>
+            <td><a href="{%url 'account:delete' i.id%}" style="color:red;">cancel</a></td>
+
+
+
+            
+
+
+        </tr>
+        {%endfor%}
+
+    
+      </table>
+</div>
+{%endblock%}
